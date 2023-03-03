@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+--text-color: #2e82d9;
+}
+body{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+h1{
+    color: var(--text-color);
+}
+
+.navbar-brand, .nav-link{
+ color: #333 !important;
+}
+
+@media (min-width:767px) {
+    .navbar-nav{
+        margin-left: auto;
+    }
+}
+
+@media (max-width:767px) {
+    .menu{
+        bottom: 1px;
+        position: absolute !important;
+        width: 100%;
+    }
+    .navbar-nav{
+        display: grid !important;
+        grid-template-columns: auto auto auto;
+    }
+}
